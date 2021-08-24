@@ -17,7 +17,7 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButton("Fire1")) { Shoot(); }
+        if (Input.GetButtonDown("Fire1")) { Shoot(); }
     }
 
 
