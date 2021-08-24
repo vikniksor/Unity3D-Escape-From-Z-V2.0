@@ -11,6 +11,6 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
-        if (health <= 0) { Debug.Log(gameObject.name + " is dead."); }
+        if (health <= 0) { GetComponent<DeathHandler>().HandleDeath(); }
     }
 }
