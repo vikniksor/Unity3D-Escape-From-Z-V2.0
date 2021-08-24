@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4041112334074326640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602344605736571824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95797fe5ee59bc74fbdc5b5fe921ecee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 8972773084018580075}
+  fpsController: {fileID: 8972773084028104111}
+  zoomedOutFOV: 60
+  zoomedInFOV: 15
+  zoomOutSensitivity: 2
+  zoomInSensitivity: 0.5
 --- !u!1 &8972773084016810061
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,6 +529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db6c2c43efd02d148b78dc686e9cf3e9, type: 3}
+--- !u!1 &5602344605736571824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6898319379928866459, guid: db6c2c43efd02d148b78dc686e9cf3e9, type: 3}
+  m_PrefabInstance: {fileID: 1298239910013783339}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5602344605736931216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6898319379929088699, guid: db6c2c43efd02d148b78dc686e9cf3e9, type: 3}
@@ -523,6 +546,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 243680826292439510}
     m_Modifications:
+    - target: {fileID: 672566867138137643, guid: fe7ab2cdc4db8ec4db83b0fbb660735a, type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 8972773084018580075}
+    - target: {fileID: 672566867138137643, guid: fe7ab2cdc4db8ec4db83b0fbb660735a, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 8972773084028104111}
     - target: {fileID: 3740596947589578546, guid: fe7ab2cdc4db8ec4db83b0fbb660735a, type: 3}
       propertyPath: ammoSlot
       value: 

@@ -15,12 +15,6 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToggle = false;
 
-
-    
-
-
-    
-
     private void Update()
     {
         if (Input.GetMouseButtonDown(1)) 
