@@ -192,7 +192,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025869f8d617413459b1e7ca1014e09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 1
+    ammoAmount: 30
+  - ammoType: 2
+    ammoAmount: 15
+  - ammoType: 3
+    ammoAmount: 10
 --- !u!1 &8972773084016810063
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a22f1dcdad14004b934f31b560d401b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1001 &1115167928359319997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -571,6 +578,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 2875492967899343071}
+    - target: {fileID: 3740596947589578546, guid: fe7ab2cdc4db8ec4db83b0fbb660735a, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3740596947589578546, guid: fe7ab2cdc4db8ec4db83b0fbb660735a, type: 3}
       propertyPath: playerCamera
       value: 
