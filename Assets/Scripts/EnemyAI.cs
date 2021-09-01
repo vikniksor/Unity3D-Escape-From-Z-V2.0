@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
 
-    [SerializeField] Transform target;
+    
     [Tooltip("A distance on wich enemy will trigger on player.")]
     [SerializeField] float chaseRange = 10f;
     [SerializeField] float turnSpeed = 5f;
@@ -18,12 +18,14 @@ public class EnemyAI : MonoBehaviour
     private bool isProvoked = false;
 
     EnemyHealth health;
+    Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
+        target = FindObjectOfType<PlayerHealth>().transform;
     }
 
     // Update is called once per frame

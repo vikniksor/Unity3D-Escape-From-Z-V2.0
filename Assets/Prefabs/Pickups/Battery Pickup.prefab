@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 4756977738608361754}
   - component: {fileID: 5548027746916768838}
   - component: {fileID: 9037656179381759401}
+  - component: {fileID: 8227649096396609940}
   m_Layer: 0
   m_Name: Battery Pickup
   m_TagString: Untagged
@@ -139,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5df287febf641499404550baafbbf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intensityAmount: 1
+  restorAngle: 90
 --- !u!135 &9037656179381759401
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -152,6 +155,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.5
   m_Center: {x: -0.45, y: 0.5, z: 0}
+--- !u!114 &8227649096396609940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4389975761303525414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5df287febf641499404550baafbbf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  intensityAmount: 1
+  restorAngle: 90
 --- !u!1001 &8988454389520144212
 PrefabInstance:
   m_ObjectHideFlags: 0
